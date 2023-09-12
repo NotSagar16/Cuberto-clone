@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+*::selection{
+
+    color: white;
+    background-color: black;
+
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav{
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    width: 90px;
+    
+}
+#right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+#nav a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1vw;
+}
+#nav i{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+#home #homemain{
+    padding: 10vw 15vw;
+}
+#homemain h1{
+    font-weight: 400;
+    font-size: 1.5vw;
+
+}
+.headings{
+    display: flex;
+    gap: 30px;
+}
+.headings p{
+    font-size:7vw ;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -7px;
+    color: transparent;
+    -webkit-text-stroke: .5px black;
+}
+.headings p:hover{
+    color: black;
+}
+
+#homelast{
+    padding: 5vw 15vw;
+}
+#homelast p{
+    width: 40%;
+    font-size: 1.3vw;
+    font-weight: 400;
+    letter-spacing: -.08px;
+}
+#homelast p::selection{
+    color: white;
+    background-color: black;
+}
+
+#featured{
+    padding: 10vw 15vw;
+
+}
+.fheading>h1{
+    font-size: 4vw;
+    font-weight: 400;
+}
+.fheading>h1:nth-child(2){
+    color: black;
+
+}
+
+#fimages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+
+}
+#fleft{
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+
+}
+
+.fleftele{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.fleftele h1{
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 1.5vw 0;
+
+}
+.fleftele h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+.fleftele h4{
+    opacity: .5;
+}
+
+#fright{
+    width: 45%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#fright .images{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid rgb(106, 105, 105);
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+
+
+}
+#dev h1::selection{
+    color: white;
+    background-color: black;
+}
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+/* slide */
+#slides{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+.slide{
+    width: 30%;
+}
+.slide .image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slide .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slide .tag{
+    padding: 10px 22px;
+    background-color: #ebebeb;
+    width: fit-content;
+    border-radius: 100px;
+    margin: 20px 0;
+}
+
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+/* my */
+
+#newday{
+    font-size: 4vw;
+    font-weight: 400;
+    padding: 5vw 10vw 1vw 10vw;
+    width: 50%;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw 10vw;
+    
+
+}
+.new .slider2{
+    width: 20%;
+
+}
+.new .slider2 .image{
+    width: 100%;
+    height: 200px;
+}
+.slider2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new .slider2 .tag2{
+    font-weight: 700;
+
+}
+.new .slider2 h4{
+    font-size: 1vw;
+}
